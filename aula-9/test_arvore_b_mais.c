@@ -347,7 +347,7 @@ if (!skip) {
 	monta_arvore_h1();
 
 	pos = insere(11, "Vanessa", NOME_ARQUIVO_METADADOS, NOME_ARQUIVO_INDICE, NOME_ARQUIVO_DADOS);
-	ASSERT_EQUAL(0, pos);
+	ASSERT_EQUAL(1, pos);
 
 	Metadados *tabMetadados = metadados(0, 1, 0, 1 * tamanho_no_folha());
 	Metadados *tabMetadadosSaida = le_arq_metadados(NOME_ARQUIVO_METADADOS);
@@ -373,7 +373,7 @@ if (!skip) {
 	monta_arvore_h2();
 
 	pos = insere(11, "Vanessa", NOME_ARQUIVO_METADADOS, NOME_ARQUIVO_INDICE, NOME_ARQUIVO_DADOS);
-	ASSERT_EQUAL(0, pos);
+	ASSERT_EQUAL(1, pos);
 
 	Metadados *tabMetadados = metadados(0, 0, tamanho_no_interno(), 3 * tamanho_no_folha());
 	Metadados *tabMetadadosSaida = le_arq_metadados(NOME_ARQUIVO_METADADOS);
